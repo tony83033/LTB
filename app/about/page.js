@@ -10,6 +10,8 @@ import Software from '@/components/about/software'
 import Control from '@/components/about/control'
 import Drive from '@/components/about/drive'
 import Project from '@/components/about/project'
+import Last from '@/components/about/last'
+import TestIntro from '@/components/about/testintro'
 const about = () => {
 
   const menuItems = [
@@ -135,8 +137,8 @@ const about = () => {
 
 
 
-
-        <Intro1></Intro1>
+    <TestIntro></TestIntro>
+        {/* <Intro1></Intro1> */}
 
         <Teem1></Teem1>
         <Infra></Infra>
@@ -146,6 +148,7 @@ const about = () => {
         <Control></Control>
         <Drive></Drive>
         <Project></Project>
+        <Last></Last>
         {/* ======================================================= */}
 
 

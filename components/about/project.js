@@ -54,12 +54,7 @@ const project = () => {
         </p>
       </div>
     </div>
-    <p className="mt-10 text-center text-gray-600">
-      Can't find what you're looking for?{"{"}" "{"}"}
-      <a href="#" title="" className="black font-semibold hover:underline">
-        Contact us
-      </a>
-    </p>
+    
   </div>
 </section>
 
