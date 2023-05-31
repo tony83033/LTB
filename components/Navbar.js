@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useRef } from 'react';
 import Link from 'next/link';
+import {MdCancel} from 'react-icons/md'
 import { CheckCircle, ChevronDown, ChevronUp, Menu, Star, X } from 'lucide-react'
 const Navbar = () => {
 
@@ -65,7 +66,7 @@ const Navbar = () => {
             <Link className="font-bold" href="/">LTB</Link>
             {/* <span className="font-bold">LTB</span> */}
           </div>
-          <div className="hidden lg:block">
+          {/* <div className="hidden lg:block">
             <ul className="inline-flex space-x-8">
               {menuItems.map((item) => (
                 <li key={item.name}>
@@ -87,15 +88,39 @@ const Navbar = () => {
                 </li>
               
             </ul>
-          </div>
+          </div> */}
+
+<div className="hidden lg:block overflow-x-hidden">
+  <ul className="inline-flex space-x-8">
+    {menuItems.map((item) => (
+      <li key={item.name}>
+        <a
+          href={item.href}
+          className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+        >
+          {item.name}
+        </a>
+      </li>
+    ))}
+    <li>
+      <button
+        onClick={toggleCart}
+        className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+      >
+        Services
+      </button>
+    </li>
+  </ul>
+</div>
+
           <div className="hidden lg:block">
-            {/* <button
+            <button
               type="button"
               onClick={toggleCart}
               className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             >
               Services
-            </button> */}
+            </button>
 
           </div>
           <div className="lg:hidden">
@@ -148,22 +173,23 @@ const Navbar = () => {
                         </a>
                       ))}
                        
-                  <button
+                       {/* <button
                     onClick={toggleCart}
-                    className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+                    className="text-sm font-bold text-gray-800  hover:text-gray-900"
                   >
                     Services
-                  </button>
+                  </button> */}
                 
                       
                     </nav>
                   </div>
-                  {/* <button
+                  <button
                     type="button"
+                    onClick={toggleCart}
                     className="mt-4 w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                   >
-                    Button text
-                  </button> */}
+                   Services
+                  </button>
                 </div>
               </div>
             </div>
@@ -174,11 +200,12 @@ const Navbar = () => {
       <div ref={ref} className="mycart   absolute h-[10vh] z-40 right-0 top-18 transform transition-transform translate-x-full ">
         <aside className="flex flex-col w-64 h-screen px-5 py-8 overflow-y-auto bg-white border-r rtl:border-r-0 rtl:border-l dark:bg-gray-900 dark:border-gray-700">
           <a href="#">
-            <img
+            {/* <img
               className="w-auto h-7"
               src="https://merakiui.com/images/logo.svg"
               alt=""
-            />
+            /> */}
+            <MdCancel onClick={toggleCart} className='text-2xl' />
           </a>
           <div className="flex flex-col justify-between flex-1 mt-6">
             <nav className="flex-1 -mx-3 space-y-3 ">
