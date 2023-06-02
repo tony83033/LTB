@@ -3,21 +3,22 @@ import React from 'react'
 const whychoose = () => {
   return (
     <React.Fragment>
-        <section className="text-gray-600 body-font">
-  <div className="container px-5 py-24 mx-auto">
+<section className="text-gray-600 body-font">
+  <div className="container px-5 py-8 mx-auto">
     <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
       <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-        Pitchfork Kickstarter Taxidermy
+      Why choose TLB’s Case Intake Services?
+
       </h1>
       <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-        Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-        gentrify, subway tile poke farm-to-table.
+      When it comes to legal case intake services, why settle for anything less than the best? TLB offers comprehensive solutions that are designed to help our clients maximise every opportunity. Here are just a few reasons why you should choose TLB for your legal intake needs:
+
       </p>
     </div>
     <div className="flex flex-wrap -m-4">
       <div className="xl:w-1/3 md:w-1/2 p-4">
         <div className="border border-gray-200 p-6 rounded-lg">
-          <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+          <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
             <svg
               fill="none"
               stroke="currentColor"
@@ -31,17 +32,17 @@ const whychoose = () => {
             </svg>
           </div>
           <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-            Shooting Stars
+          Case Intake Services
           </h2>
           <p className="leading-relaxed text-base">
-            Fingerstache flexitarian street art 8-bit waist co, subway tile poke
-            farm.
+          Cost-effective Pricing: We understand that budgets are tight, which is why we provide our legal intake services at highly competitive rates. This ensures that you get the most bang for your buck.
+
           </p>
         </div>
       </div>
       <div className="xl:w-1/3 md:w-1/2 p-4">
         <div className="border border-gray-200 p-6 rounded-lg">
-          <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+          <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
             <svg
               fill="none"
               stroke="currentColor"
@@ -57,17 +58,16 @@ const whychoose = () => {
             </svg>
           </div>
           <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-            The Catalyzer
+          Case Intake Services
           </h2>
           <p className="leading-relaxed text-base">
-            Fingerstache flexitarian street art 8-bit waist co, subway tile poke
-            farm.
+          High-quality Services: We take pride in our commitment to providing only the highest quality legal intake services. Our certifications stand as a testament to this commitment.
           </p>
         </div>
       </div>
       <div className="xl:w-1/3 md:w-1/2 p-4">
         <div className="border border-gray-200 p-6 rounded-lg">
-          <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+          <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
             <svg
               fill="none"
               stroke="currentColor"
@@ -82,17 +82,17 @@ const whychoose = () => {
             </svg>
           </div>
           <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-            Neptune
+          Case Intake Services
           </h2>
           <p className="leading-relaxed text-base">
-            Fingerstache flexitarian street art 8-bit waist co, subway tile poke
-            farm.
+          Multiple Legal Intake Software Supported: Our team is proficient in using a variety of software, allowing us to capture every call and lead, and deliver top-notch legal intake reports.
+
           </p>
         </div>
       </div>
       <div className="xl:w-1/3 md:w-1/2 p-4">
         <div className="border border-gray-200 p-6 rounded-lg">
-          <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+          <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
             <svg
               fill="none"
               stroke="currentColor"
@@ -106,17 +106,16 @@ const whychoose = () => {
             </svg>
           </div>
           <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-            Melanchole
+          Case Intake Services
           </h2>
           <p className="leading-relaxed text-base">
-            Fingerstache flexitarian street art 8-bit waist co, subway tile poke
-            farm.
+          Data Security: Your data is safe with us. We are ISO 9001:2015 certified and take the security of your information very seriously.
           </p>
         </div>
       </div>
       <div className="xl:w-1/3 md:w-1/2 p-4">
         <div className="border border-gray-200 p-6 rounded-lg">
-          <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+          <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
             <svg
               fill="none"
               stroke="currentColor"
@@ -130,17 +129,17 @@ const whychoose = () => {
             </svg>
           </div>
           <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-            Bunker
+          Case Intake Services
           </h2>
           <p className="leading-relaxed text-base">
-            Fingerstache flexitarian street art 8-bit waist co, subway tile poke
-            farm.
+          Tools and Technologies: We stay on top of the latest legal intake tools and technologies to ensure that we are providing the best possible service.
+
           </p>
         </div>
       </div>
       <div className="xl:w-1/3 md:w-1/2 p-4">
         <div className="border border-gray-200 p-6 rounded-lg">
-          <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+          <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
             <svg
               fill="none"
               stroke="currentColor"
@@ -154,20 +153,20 @@ const whychoose = () => {
             </svg>
           </div>
           <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
-            Ramona Falls
+          Case Intake Services
           </h2>
           <p className="leading-relaxed text-base">
-            Fingerstache flexitarian street art 8-bit waist co, subway tile poke
-            farm.
+          Quick Turnaround Time: We know that time is of the essence, which is why we always deliver our legal intake services on time, every time.
+
           </p>
         </div>
       </div>
     </div>
-    <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-      Button
-    </button>
+  
   </div>
 </section>
+
+
 
     </React.Fragment>
   )

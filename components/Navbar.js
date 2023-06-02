@@ -63,7 +63,7 @@ const Navbar = () => {
                 />
               </svg>
             </span> */}
-            <Link className="font-bold" href="/">LTB</Link>
+            <Link className="font-bold" href="/">T&nbsp;L&nbsp;B</Link>
             {/* <span className="font-bold">LTB</span> */}
           </div>
           {/* <div className="hidden lg:block">
@@ -146,7 +146,7 @@ const Navbar = () => {
                           />
                         </svg>
                       </span>
-                      <span className="font-bold">TLB</span>
+                      <span className="font-bold">T L B</span>
                     </div>
                     <div className="-mr-2">
                       <button
@@ -231,9 +231,9 @@ const Navbar = () => {
                   placeholder="Search"
                 />
               </div>
-              <a
+              <Link
                 className="flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-                href="#"
+                href="/cakeintakeservices"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -249,11 +249,11 @@ const Navbar = () => {
                     d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
                   />
                 </svg>
-                <span className="mx-2 text-sm font-medium">Home</span>
-              </a>
-              <a
+                <span className="mx-2 text-sm font-medium">Case Intake Services</span>
+              </Link>
+              <Link
                 className="flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-                href="#"
+                href="/cakeintakeservices"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -270,7 +270,7 @@ const Navbar = () => {
                   />
                 </svg>
                 <span className="mx-2 text-sm font-medium">Dashboard</span>
-              </a>
+              </Link>
               <a
                 className="flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
                 href="#"
@@ -388,8 +388,7 @@ const Navbar = () => {
                   New feature availabel!
                 </h2>
                 <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus harum
-                  officia eligendi velit.
+                Discover The Legal Base's new services! As your 'One Stop Shop' for personal injury law firms, we offer complete medical and legal assistance. Our support spans all phases of litigation, from client intake to settlement. Experience our expertise and continuous support. Don't miss out!
                 </p>
                 <img
                   className="object-cover w-full h-32 mt-2 rounded-lg"
