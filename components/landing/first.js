@@ -8,7 +8,7 @@ const first = () => {
     <div className="flex flex-col justify-center px-4 py-12 md:py-16 lg:col-span-7 lg:gap-x-6 lg:px-6 lg:py-24 xl:col-span-6">
       <div className="mt-8 flex max-w-max items-center space-x-2 rounded-full bg-gray-100 p-1">
         <div className="rounded-full bg-white p-1 px-2">
-          <p className="text-sm font-medium">Want' Solution</p>
+          <p className="text-sm font-medium">Want&apos; Solution</p>
         </div>
         <p className="text-sm font-medium">Get in touch with us →</p>
       </div>
@@ -16,7 +16,7 @@ const first = () => {
         Personal Injury Legal Solutions
       </h1>
       <p className="mt-8 text-lg text-gray-700">
-        The Legal Base is a 'One Stop Shoop' for personal injury law firms ,
+        The Legal Base is a &apos;One Stop Shoop&apos; for personal injury law firms ,
         offering complete medical and legal help WE provide continual support by
         actively engaging in all phases of personal injury litigation, from
         client intake through settlement.g elit. Consequatur modi blanditiis

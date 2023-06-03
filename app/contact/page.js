@@ -37,11 +37,11 @@ const locations = [
 ]
 
 const contact = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false)
+  // const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+  // const toggleMenu = () => {
+  //   setIsMenuOpen(!isMenuOpen)
+  // }
 
   return (
     <div>

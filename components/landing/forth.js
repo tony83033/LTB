@@ -177,7 +177,7 @@ const forth = () => {
           <div className=" border-b">
             <div className="px-9 py-7">
               <h3 className="mb-3 text-xl font-bold leading-snug text-gray-900">
-                Let's Unserstand what is a Tort
+                Let&apos;s Unserstand what is a Tort
               </h3>
               <p className="font-medium leading-relaxed text-gray-500">
                 Lorem ipsum dolor sit amet, consect etur adipiscing maror.

@@ -98,11 +98,11 @@ const about = () => {
     },
   ]
 
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false)
+  // const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+  // const toggleMenu = () => {
+  //   setIsMenuOpen(!isMenuOpen)
+  // }
   return (
     <React.Fragment>
 

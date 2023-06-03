@@ -29,7 +29,7 @@ const project = () => {
         Latest Technology
         </h2>
         <p className="mt-6 text-sm leading-6 tracking-wide text-gray-500">
-        The Legal Base is on the cutting-edge of legal technology, identifying and incorporating the best tools and applications to meet our client's unique needs. Our team of tech-savvy experts demystify the latest developments, assess risks and benefits, and help clients make informed decisions on new initiatives. From AI to industry standards, we know how to maximize the potential of legal technology to drive results.
+        The Legal Base is on the cutting-edge of legal technology, identifying and incorporating the best tools and applications to meet our client&apos;s unique needs. Our team of tech-savvy experts demystify the latest developments, assess risks and benefits, and help clients make informed decisions on new initiatives. From AI to industry standards, we know how to maximize the potential of legal technology to drive results.
 
 
         </p>

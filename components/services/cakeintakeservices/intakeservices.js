@@ -11,7 +11,7 @@ const intakeservices = () => {
 
       </h1>
       <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
-      TLB is a legal intake company with decades of experience in providing top-notch services to clients. We understand that every legal practice is unique and that's why we have a range of offerings to match your specific needs. Here's what you can expect from our legal intake services:
+      TLB is a legal intake company with decades of experience in providing top-notch services to clients. We understand that every legal practice is unique and that&apos;s why we have a range of offerings to match your specific needs. Here&apos;s what you can expect from our legal intake services:
 
       </p>
       <div className="flex mt-6 justify-center">
@@ -118,7 +118,7 @@ const intakeservices = () => {
 
           </h2>
           <p className="leading-relaxed text-base">
-          Our legal intake representatives will record all the calls and other data you receive and deliver it to you in the format of your choice, whether it's through web-based databases or email communication. Our goal is to capture every potential opportunity and deliver the data that you need to capitalise on it. With our legal intake reporting services, we eliminate the need for further data entry, allowing you to move quickly on all your leads.
+          Our legal intake representatives will record all the calls and other data you receive and deliver it to you in the format of your choice, whether it&apos;s through web-based databases or email communication. Our goal is to capture every potential opportunity and deliver the data that you need to capitalise on it. With our legal intake reporting services, we eliminate the need for further data entry, allowing you to move quickly on all your leads.
           </p>
           <a className="mt-3 text-yellow-500 inline-flex items-center">
             Learn More

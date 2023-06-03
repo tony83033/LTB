@@ -388,7 +388,7 @@ const Navbar = () => {
                   New feature availabel!
                 </h2>
                 <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
-                Discover The Legal Base's new services! As your 'One Stop Shop' for personal injury law firms, we offer complete medical and legal assistance. Our support spans all phases of litigation, from client intake to settlement. Experience our expertise and continuous support. Don't miss out!
+                Discover The Legal Base&apos;s new services! As your &apos;One Stop Shop&apos; for personal injury law firms, we offer complete medical and legal assistance. Our support spans all phases of litigation, from client intake to settlement. Experience our expertise and continuous support. Don&apos;t miss out!
                 </p>
                 <img
                   className="object-cover w-full h-32 mt-2 rounded-lg"
