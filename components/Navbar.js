@@ -317,7 +317,7 @@ const Navbar = () => {
                 </svg>
                 <span className="mx-2 text-sm font-medium">Personal Injury</span>
               </Link>
-              <a
+              {/* <a
                 className="flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
                 href="#"
               >
@@ -336,8 +336,8 @@ const Navbar = () => {
                   />
                 </svg>
                 <span className="mx-2 text-sm font-medium">Reporting</span>
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 className="flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
                 href="#"
               >
@@ -356,8 +356,8 @@ const Navbar = () => {
                   />
                 </svg>
                 <span className="mx-2 text-sm font-medium">Users</span>
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 className="flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
                 href="#"
               >
@@ -376,7 +376,7 @@ const Navbar = () => {
                   />
                 </svg>
                 <span className="mx-2 text-sm font-medium">Setting</span>
-              </a>
+              </a> */}
             </nav>
             <div className="mt-6">
               <div className="p-3 bg-gray-100 rounded-lg dark:bg-gray-800">
