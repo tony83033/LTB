@@ -122,7 +122,7 @@ const first = () => {
             viability of the case, determining if it falls within the firm's
             practice areas and meets the necessary requirements for further
             consideration. This assessment helps filter out cases that do not
-            align with the firm's expertise or do not meet specific criteria.
+            align with the firm&apos;s expertise or do not meet specific criteria.
           </p>
         </div>
         <div className="bg-white shadow-lg rounded-lg p-8">
