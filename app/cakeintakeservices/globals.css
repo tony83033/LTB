@@ -70,3 +70,6 @@
       box-shadow: .2em -.2em 0 0 currentcolor;
     }
   }
+  body {
+    overflow-x: hidden;
+  }
