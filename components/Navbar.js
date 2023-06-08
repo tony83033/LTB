@@ -47,7 +47,7 @@ const Navbar = () => {
     <React.Fragment>
 
 
-      <header className="relative w-full border-b bg-white pb-4">
+      <header className="relative w-full border-b bg-white pb-4 shadow-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2">
           <div className="inline-flex items-center space-x-2">
             <span>

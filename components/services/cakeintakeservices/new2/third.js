@@ -1,9 +1,9 @@
 import React from 'react'
 
-const second = () => {
+const third = () => {
   return (
-    <React.Fragment>
-        <div className="mx-auto my-32 max-w-7xl px-2 lg:px-8">
+<React.Fragment>
+<div className="mx-auto my-32 max-w-7xl px-2 lg:px-8">
   <div className="grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
     <div>
       <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-blue-100">
@@ -23,14 +23,12 @@ const second = () => {
         </svg>
       </div>
       <h3 className="mt-8 text-lg font-semibold text-black">
-        Medical Summaries
+      Initial Contact and Communication: 
+
       </h3>
       <p className="mt-4 text-sm text-gray-600">
-        TLBs medical summarization team has vast experience providing
-        comprehensive support to law firms from beginning to end, including
-        retrieval of records and making chronological summaries. Additionally,
-        we also have the capability of assisting you with annotations, billing
-        summaries, indexing and pagination.
+      TLB can act as the first point of contact for potential clients and handle phone calls, emails, or web inquiries from individuals seeking legal assistance. TLB can gather essential information about the potential case, such as the nature of the legal issue, relevant dates, parties involved, and any supporting documentation.
+
       </p>
     </div>
     <div>
@@ -50,13 +48,12 @@ const second = () => {
           />
         </svg>
       </div>
-      <h3 className="mt-8 text-lg font-semibold text-black">Demand Letters</h3>
+      <h3 className="mt-8 text-lg font-semibold text-black">Data Collection and Documentation: 
+</h3>
       <p className="mt-4 text-sm text-gray-600">
-        Having substantial experience drafting about twenty thousand demand
-        letters for various plaintiff law firms, TLB’s attorneys well understand
-        the purpose of each demand letter and the legal consequences of errors
-        in a letter. We are backed by doctors in assessing the magnitude of
-        injuries to ensure you prevail in your case.
+      TLB can collect relevant data and documents from potential clients during the intake process. This may include personal information, contact details, incident descriptions, medical records, contracts, or any other relevant information needed for evaluation.
+
+
       </p>
     </div>
     <div>
@@ -77,14 +74,12 @@ const second = () => {
         </svg>
       </div>
       <h3 className="mt-8 text-lg font-semibold text-black">
-        Standard of Care Reports
+      Initial Assessment and Screening: 
+
       </h3>
       <p className="mt-4 text-sm text-gray-600">
-        We assist law firms in understanding whether a reasonable standard of
-        care was applied to a particular case or not through a review of the
-        records. In the event of any errors or substandard care, our team draws
-        your attention to it and notes the alternate care that should have been
-        provided to a client.
+      TLB can assess the potential cases based on predetermined criteria or instructions provided by the law firm. TLB can evaluate the viability of the case, determining if it falls within the firm's practice areas and meets the necessary requirements for further consideration. This assessment helps filter out cases that do not align with the firm's expertise or do not meet specific criteria.
+
       </p>
     </div>
     <div>
@@ -105,21 +100,18 @@ const second = () => {
         </svg>
       </div>
       <h3 className="mt-8 text-lg font-semibold text-black">
-        Forensic Analysis
+      Case Prioritization and Routing: 
+
       </h3>
       <p className="mt-4 text-sm text-gray-600">
-        TLB’s forensic expert attorneys and doctors have over 20 years of
-        experience in the field of forensic analysis and evaluations. They are
-        skilled at making detailed processes of detecting, investigating, and
-        documenting the reason, course, and consequences of an incident and the
-        violations thereof.
+      Once the initial assessment is complete, TLB can prioritize and route qualified cases to the appropriate attorney or legal team within the law firm. This involves categorizing cases based on urgency, complexity, practice area, or other predefined factors to ensure proper allocation of resources.
+
       </p>
     </div>
   </div>
 </div>
-
-    </React.Fragment>
+</React.Fragment>
   )
 }
 
-export default second
+export default third
