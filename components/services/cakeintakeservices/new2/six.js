@@ -1,9 +1,19 @@
 import React from 'react'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 const six = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 300, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 1000, 
+    });
+  });
   return (
+    
   <React.Fragment>
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-white dark:bg-gray-900" data-aos="zoom-out-down">
   <div className="container px-6 py-10 mx-auto">
     <div className="lg:flex lg:items-center">
       <div className="w-full space-y-12 lg:w-1/2 ">

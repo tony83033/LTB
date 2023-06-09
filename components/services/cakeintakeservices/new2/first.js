@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Second from './second'
 import Third from './third'
@@ -5,13 +6,23 @@ import Fore from './fore'
 import Five from './five'
 import Six from './six'
 import Faq from '../new/faq'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 const first = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 300, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 1000, 
+    });
+  });
   return (
    <React.Fragment>
     <div className='container m-4'>
     <div className="w-full">
 
-  <div className="relative w-full bg-white">
+  <div className="relative w-full bg-white" data-aos="fade-up-left">
     <div className="mx-auto max-w-7xl lg:px-8">
       <div className="flex flex-col justify-center px-4 py-10 lg:px-6">
         <div className="mt-10 flex max-w-max items-center space-x-2 rounded-full border p-2">
@@ -47,7 +58,7 @@ const first = () => {
     </div>
   </div>
 
-  <Second></Second>
+  <Second ></Second>
 <Third></Third>
 <Fore></Fore>
 <Five></Five>
@@ -61,15 +72,15 @@ const first = () => {
 
         </p>
       </div>
-      <h2 className="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+      {/* <h2 className="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
         DevUI helps you build beautiful website
-      </h2>
-      <p className="mt-4 text-base leading-relaxed text-gray-600">
+      </h2> */}
+      {/* <p className="mt-4 text-base leading-relaxed text-gray-600">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit.
-      </p>
+      </p> */}
     </div>
-    <div className="mt-12 grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
+    <div className="mt-12 grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4" data-aos="zoom-out-down">
       <div>
         <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
           <svg

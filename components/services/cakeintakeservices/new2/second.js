@@ -1,9 +1,21 @@
+"use-client" 
 import React from 'react'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const second = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 300, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 1000, 
+    });
+  });
   return (
    <React.Fragment>
-    <div className="relative w-full " >
+    <div className="relative w-full " data-aos="zoom-in-up">
  
   <div className="relative isolate z-0 bg-white px-6 pt-14 lg:px-8">
     <div className="relative mx-auto max-w-2xl py-24">

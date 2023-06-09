@@ -1,9 +1,19 @@
 import React from 'react'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 const five = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 300, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 1000, 
+    });
+  });
   return (
    <React.Fragment>
-    <div className='container m-4'>
+    <div className='container m-4' data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
     <section className="px-2">
   <div className="mx-auto max-w-7xl py-10">
     <div>
