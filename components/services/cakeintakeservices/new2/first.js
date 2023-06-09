@@ -9,7 +9,7 @@ import Faq from '../new/faq'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-const first = () => {
+const First = () => {
   useEffect(() => {
     AOS.init({
       offset: 300, // offset (in px) from the original trigger point
@@ -763,4 +763,4 @@ const first = () => {
   )
 }
 
-export default first
+export default First

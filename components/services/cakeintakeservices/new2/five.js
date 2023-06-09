@@ -2,7 +2,7 @@ import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-const five = () => {
+const Five = () => {
   useEffect(() => {
     AOS.init({
       offset: 300, // offset (in px) from the original trigger point
@@ -69,4 +69,4 @@ const five = () => {
   )
 }
 
-export default five
+export default Five

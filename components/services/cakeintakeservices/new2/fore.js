@@ -2,7 +2,7 @@ import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-const fore = () => {
+const Fore = () => {
   useEffect(() => {
     AOS.init({
       offset: 300, // offset (in px) from the original trigger point
@@ -75,4 +75,4 @@ const fore = () => {
   )
 }
 
-export default fore
+export default Fore

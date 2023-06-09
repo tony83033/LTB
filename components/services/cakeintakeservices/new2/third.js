@@ -2,7 +2,7 @@ import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-const third = () => {
+const Third = () => {
   useEffect(() => {
     AOS.init({
       offset: 300, // offset (in px) from the original trigger point
@@ -123,4 +123,4 @@ const third = () => {
   )
 }
 
-export default third
+export default Third
