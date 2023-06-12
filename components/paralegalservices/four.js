@@ -1,9 +1,19 @@
 "use client"
 import React from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 const Four = () => {
+    useEffect(() => {
+        AOS.init({
+          offset: 300, // offset (in px) from the original trigger point
+          delay: 0, // values from 0 to 3000, with step 50ms
+          duration: 1000, 
+        });
+      });
   return (
     <React.Fragment>
-        <section className="m-1 p-4 md:m-8 bg-gray-800 text-gray-100">
+        <section className="m-1 p-4 md:m-8 bg-gray-800 text-gray-100" data-aos="zoom-in">
   <div className="container mx-auto p-4 my-6 space-y-2 text-center">
     <h2 className="text-5xl font-bold">Built to empower every team</h2>
     <p className="text-gray-400">Libero minima optio qui</p>

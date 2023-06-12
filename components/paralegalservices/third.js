@@ -1,6 +1,15 @@
 import React from 'react'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 const Third = () => {
+    useEffect(() => {
+        AOS.init({
+          offset: 300, // offset (in px) from the original trigger point
+          delay: 0, // values from 0 to 3000, with step 50ms
+          duration: 1000, 
+        });
+      });
   return (
     <React.Fragment>
         <div className="mx-auto my-12 max-w-7xl md:my-24 lg:my-32 ">
@@ -38,7 +47,7 @@ const Third = () => {
       </div>
     </div>
     <div className="flex flex-col items-center justify-center md:flex-row lg:col-span-7">
-      <div className="w-full p-5 md:w-1/2">
+      <div className="w-full p-5 md:w-1/2" data-aos="fade-up">
         <div className="rounded-md border bg-white bg-opacity-90">
           <div className=" border-b">
             <div className="px-9 py-7">
@@ -181,7 +190,7 @@ const Third = () => {
           </div>
         </div>
       </div>
-      <div className="w-full p-5 md:w-1/2">
+      <div className="w-full p-5 md:w-1/2" data-aos="fade-down">
         <div className="rounded-md border bg-white bg-opacity-90">
           <div className=" border-b">
             <div className="px-9 py-7">
