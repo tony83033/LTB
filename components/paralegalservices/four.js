@@ -15,6 +15,15 @@ import { EffectCoverflow, Pagination } from "swiper";
 export default function Four() {
   return (
     <>
+          <div className="container mx-auto p-4 my-6 space-y-2 text-center">
+        <h2 className="text-3xl font-bold">
+          Why Outsource Paralegal Support Services to TLB?
+        </h2>
+        <p className="dark:text-gray-400">
+          Outsourcing paralegal support offers several benefits to law firms and
+          legal departments:
+        </p>
+      </div>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
