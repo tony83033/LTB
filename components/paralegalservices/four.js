@@ -13,9 +13,50 @@ import "./styles.css";
 import { EffectCoverflow, Pagination } from "swiper";
 
 export default function Four() {
+  const cardData = [
+    {
+      title: "Cost savings",
+      description: "Outsourcing paralegal support to TLB can be more cost-effective than hiring and maintaining an in-house paralegal team. By outsourcing to TLB, organizations can avoid costs associated with salaries, benefits, training, office space, equipment, and other overhead expenses.",
+    },
+    {
+      title: "Scalability and flexibility",
+      description: "Outsourcing to TLB allows for flexibility in scaling paralegal resources based on workload fluctuations or specific project requirements. During peak periods or when facing a sudden increase in caseload, organizations can quickly ramp up paralegal support without the need for long-term commitments.",
+    },
+    {
+      title: "Access to specialized expertise",
+      description: "Outsourcing to TLB provides access to a pool of paralegals with diverse backgrounds and expertise in various areas of law. Organizations can tap into this specialized knowledge without having to invest in extensive training or hiring full-time paralegals with specific skill sets.",
+    },
+    {
+      title: "Enhanced efficiency and productivity",
+      description: "TLB Paralegal support can help streamline legal operations, increase efficiency, and improve overall productivity. TLB Paralegals are experienced in handling routine legal tasks, document management, research, and administrative duties, allowing attorneys to focus on higher-level legal work.",
+    },
+    {
+      title: "Focus on core legal work",
+      description: "By outsourcing paralegal support to TLB, attorneys and legal professionals can devote more time and attention to their core legal work, such as strategy, client counseling, case management, and courtroom advocacy. TLB Paralegals handle the time-consuming tasks, freeing up attorneys to focus on matters that require their expertise.",
+    },
+    {
+      title: "Access to advanced technology and resources",
+      description: "TLB Outsourced paralegal service providers often have access to advanced legal technology, research databases, and document management systems. Leveraging these tools can improve efficiency, accuracy, and the quality of work delivered.",
+    },
+    {
+      title: "Reduced administrative burden",
+      description: "TLB Paralegals can assist with administrative tasks, such as organizing documents, managing calendars, and maintaining case files. By outsourcing these administrative responsibilities to TLB, attorneys can minimize their administrative workload and allocate their time more effectively.",
+    },
+    {
+      title: "Increased agility and competitiveness",
+      description: "Outsourcing to TLB paralegal support allows organizations to stay agile and competitive in a rapidly changing legal landscape. They can quickly adapt to new projects, expand their services, and meet client demands without being constrained by limited in-house resources.",
+    },
+    {
+      title: "Important note",
+      description: "It's important to note that outsourcing paralegal support does not replace the need for qualified attorneys. Rather, it complements legal expertise by providing additional support and resources, enabling legal professionals to operate more efficiently and effectively.",
+    }
+  ];
+  
   return (
-    <>
-          <div className="container mx-auto p-4 my-6 space-y-2 text-center">
+     <>
+    
+
+      <div className="container mx-auto p-4 my-6 space-y-2 text-center">
         <h2 className="text-3xl font-bold">
           Why Outsource Paralegal Support Services to TLB?
         </h2>
@@ -40,151 +81,33 @@ export default function Four() {
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
-        <div class="bg-white shadow-lg rounded-lg p-8">
-          <div class="flex items-center mb-6">
-            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-              <svg class="text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z" clip-rule="evenodd" />
-              </svg>
+        {/* Step 2: Map the card data to the SwiperSlides */}
+        {cardData.map((card, index) => (
+          <SwiperSlide key={index}>
+            <div className="bg-white shadow-lg rounded-lg p-8">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+                  <svg
+                    className="text-white w-6 h-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold ml-4">{card.title}</h3>
+              </div>
+              <p className="text-gray-700">{card.description}</p>
             </div>
-            <h3 class="text-xl font-bold ml-4">Appointment Scheduling: 
-</h3>
-          </div>
-          <p class="text-gray-700">TTLB can assist in scheduling initial consultations or appointments between potential clients and attorneys. TLB can manage calendars, coordinate availability, and communicate with both parties to ensure smooth scheduling.
-
-</p>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div class="bg-white shadow-lg rounded-lg p-8">
-          <div class="flex items-center mb-6">
-            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-              <svg class="text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z" clip-rule="evenodd" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold ml-4">Appointment Scheduling: 
-</h3>
-          </div>
-          <p class="text-gray-700">TTLB can assist in scheduling initial consultations or appointments between potential clients and attorneys. TLB can manage calendars, coordinate availability, and communicate with both parties to ensure smooth scheduling.
-
-</p>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div class="bg-white shadow-lg rounded-lg p-8">
-          <div class="flex items-center mb-6">
-            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-              <svg class="text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z" clip-rule="evenodd" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold ml-4">Appointment Scheduling: 
-</h3>
-          </div>
-          <p class="text-gray-700">TTLB can assist in scheduling initial consultations or appointments between potential clients and attorneys. TLB can manage calendars, coordinate availability, and communicate with both parties to ensure smooth scheduling.
-
-</p>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div class="bg-white shadow-lg rounded-lg p-8">
-          <div class="flex items-center mb-6">
-            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-              <svg class="text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z" clip-rule="evenodd" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold ml-4">Appointment Scheduling: 
-</h3>
-          </div>
-          <p class="text-gray-700">TTLB can assist in scheduling initial consultations or appointments between potential clients and attorneys. TLB can manage calendars, coordinate availability, and communicate with both parties to ensure smooth scheduling.
-
-</p>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div class="bg-white shadow-lg rounded-lg p-8">
-          <div class="flex items-center mb-6">
-            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-              <svg class="text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z" clip-rule="evenodd" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold ml-4">Appointment Scheduling: 
-</h3>
-          </div>
-          <p class="text-gray-700">TTLB can assist in scheduling initial consultations or appointments between potential clients and attorneys. TLB can manage calendars, coordinate availability, and communicate with both parties to ensure smooth scheduling.
-
-</p>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div class="bg-white shadow-lg rounded-lg p-8">
-          <div class="flex items-center mb-6">
-            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-              <svg class="text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z" clip-rule="evenodd" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold ml-4">Appointment Scheduling: 
-</h3>
-          </div>
-          <p class="text-gray-700">TTLB can assist in scheduling initial consultations or appointments between potential clients and attorneys. TLB can manage calendars, coordinate availability, and communicate with both parties to ensure smooth scheduling.
-
-</p>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div class="bg-white shadow-lg rounded-lg p-8">
-          <div class="flex items-center mb-6">
-            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-              <svg class="text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z" clip-rule="evenodd" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold ml-4">Appointment Scheduling: 
-</h3>
-          </div>
-          <p class="text-gray-700">TTLB can assist in scheduling initial consultations or appointments between potential clients and attorneys. TLB can manage calendars, coordinate availability, and communicate with both parties to ensure smooth scheduling.
-
-</p>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div class="bg-white shadow-lg rounded-lg p-8">
-          <div class="flex items-center mb-6">
-            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-              <svg class="text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z" clip-rule="evenodd" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold ml-4">Appointment Scheduling: 
-</h3>
-          </div>
-          <p class="text-gray-700">TTLB can assist in scheduling initial consultations or appointments between potential clients and attorneys. TLB can manage calendars, coordinate availability, and communicate with both parties to ensure smooth scheduling.
-
-</p>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div class="bg-white shadow-lg rounded-lg p-8">
-          <div class="flex items-center mb-6">
-            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-              <svg class="text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z" clip-rule="evenodd" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold ml-4">Appointment Scheduling: 
-</h3>
-          </div>
-          <p class="text-gray-700">TTLB can assist in scheduling initial consultations or appointments between potential clients and attorneys. TLB can manage calendars, coordinate availability, and communicate with both parties to ensure smooth scheduling.
-
-</p>
-        </div>
-        </SwiperSlide>
+          </SwiperSlide>
+        ))}
       </Swiper>
+      
     </>
   );
 }
