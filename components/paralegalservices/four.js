@@ -1,164 +1,181 @@
-"use client"
-import React from 'react'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
-const Four = () => {
-    useEffect(() => {
-        AOS.init({
-          offset: 300, // offset (in px) from the original trigger point
-          delay: 0, // values from 0 to 3000, with step 50ms
-          duration: 1000, 
-        });
-      });
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+
+import "./styles.css";
+
+// import required modules
+import { EffectCoverflow, Pagination } from "swiper";
+
+export default function Four() {
   return (
-    <React.Fragment>
-        <section className="m-1 p-4 md:m-8 bg-gray-800 text-gray-100" data-aos="zoom-in">
-  <div className="container mx-auto p-4 my-6 space-y-2 text-center">
-    <h2 className="text-5xl font-bold">Built to empower every team</h2>
-    <p className="text-gray-400">Libero minima optio qui</p>
-  </div>
-  <div className="container mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3">
-    <div className="flex flex-col items-center p-4">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="w-8 h-8 text-violet-400"
+    <>
+      <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination]}
+        className="mySwiper"
       >
-        <path
-          fillRule="evenodd"
-          d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
-          clipRule="evenodd"
-        />
-      </svg>
-      <h3 className="my-3 text-3xl font-semibold">Trial Preparation:
+        <SwiperSlide>
+        <div class="bg-white shadow-lg rounded-lg p-8">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+              <svg class="text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold ml-4">Appointment Scheduling: 
 </h3>
-      <div className="space-y-1 leading-tight content-center">
-        <p>   <ul class="list-none content-center text-center">
+          </div>
+          <p class="text-gray-700">TTLB can assist in scheduling initial consultations or appointments between potential clients and attorneys. TLB can manage calendars, coordinate availability, and communicate with both parties to ensure smooth scheduling.
 
-<li>Expert witness report summarization
-</li>
-<li> Document summarization for discovery</li>
-<li>Document Management with the use of software Casemap
-</li>
-<li> Property search from public records</li>
-</ul></p>
-   
-      </div>
-    </div>
-    <div className="flex flex-col items-center p-4">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="w-8 h-8 text-violet-400"
-      >
-        <path
-          fillRule="evenodd"
-          d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
-          clipRule="evenodd"
-        />
-      </svg>
-      <h3 className="my-3 text-3xl font-semibold">Product</h3>
-      <div className="space-y-1 leading-tight">
-      <p>   <ul class="list-none content-center text-center">
+</p>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div class="bg-white shadow-lg rounded-lg p-8">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+              <svg class="text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold ml-4">Appointment Scheduling: 
+</h3>
+          </div>
+          <p class="text-gray-700">TTLB can assist in scheduling initial consultations or appointments between potential clients and attorneys. TLB can manage calendars, coordinate availability, and communicate with both parties to ensure smooth scheduling.
 
-<li>Expert witness report summarization
-</li>
-<li> Document summarization for discovery</li>
-<li>Document Management with the use of software Casemap
-</li>
-<li> Property search from public records</li>
-</ul></p>
-   
-      </div>
-    </div>
-    <div className="flex flex-col items-center p-4">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="w-8 h-8 text-violet-400"
-      >
-        <path
-          fillRule="evenodd"
-          d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
-          clipRule="evenodd"
-        />
-      </svg>
-      <h3 className="my-3 text-3xl font-semibold">Product</h3>
-      <div className="space-y-1 leading-tight">
-        <p>Similique quas ea veniam</p>
-        <p>Tempore quasi porro</p>
-        <p>Blanditiis aut mollitia ex</p>
-      </div>
-    </div>
-    <div className="flex flex-col items-center p-4">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="w-8 h-8 text-violet-400"
-      >
-        <path
-          fillRule="evenodd"
-          d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
-          clipRule="evenodd"
-        />
-      </svg>
-      <h3 className="my-3 text-3xl font-semibold">Product</h3>
-      <div className="space-y-1 leading-tight">
-        <p>Similique quas ea veniam</p>
-        <p>Tempore quasi porro</p>
-        <p>Blanditiis aut mollitia ex</p>
-      </div>
-    </div>
-    <div className="flex flex-col items-center p-4">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="w-8 h-8 text-violet-400"
-      >
-        <path
-          fillRule="evenodd"
-          d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
-          clipRule="evenodd"
-        />
-      </svg>
-      <h3 className="my-3 text-3xl font-semibold">Product</h3>
-      <div className="space-y-1 leading-tight">
-        <p>Similique quas ea veniam</p>
-        <p>Tempore quasi porro</p>
-        <p>Blanditiis aut mollitia ex</p>
-      </div>
-    </div>
-    <div className="flex flex-col items-center p-4">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="w-8 h-8 text-violet-400"
-      >
-        <path
-          fillRule="evenodd"
-          d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
-          clipRule="evenodd"
-        />
-      </svg>
-      <h3 className="my-3 text-3xl font-semibold">Product</h3>
-      <div className="space-y-1 leading-tight">
-        <p>Similique quas ea veniam</p>
-        <p>Tempore quasi porro</p>
-        <p>Blanditiis aut mollitia ex</p>
-      </div>
-    </div>
-  </div>
-</section>
+</p>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div class="bg-white shadow-lg rounded-lg p-8">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+              <svg class="text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold ml-4">Appointment Scheduling: 
+</h3>
+          </div>
+          <p class="text-gray-700">TTLB can assist in scheduling initial consultations or appointments between potential clients and attorneys. TLB can manage calendars, coordinate availability, and communicate with both parties to ensure smooth scheduling.
 
-    </React.Fragment>
-  )
+</p>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div class="bg-white shadow-lg rounded-lg p-8">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+              <svg class="text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold ml-4">Appointment Scheduling: 
+</h3>
+          </div>
+          <p class="text-gray-700">TTLB can assist in scheduling initial consultations or appointments between potential clients and attorneys. TLB can manage calendars, coordinate availability, and communicate with both parties to ensure smooth scheduling.
+
+</p>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div class="bg-white shadow-lg rounded-lg p-8">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+              <svg class="text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold ml-4">Appointment Scheduling: 
+</h3>
+          </div>
+          <p class="text-gray-700">TTLB can assist in scheduling initial consultations or appointments between potential clients and attorneys. TLB can manage calendars, coordinate availability, and communicate with both parties to ensure smooth scheduling.
+
+</p>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div class="bg-white shadow-lg rounded-lg p-8">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+              <svg class="text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold ml-4">Appointment Scheduling: 
+</h3>
+          </div>
+          <p class="text-gray-700">TTLB can assist in scheduling initial consultations or appointments between potential clients and attorneys. TLB can manage calendars, coordinate availability, and communicate with both parties to ensure smooth scheduling.
+
+</p>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div class="bg-white shadow-lg rounded-lg p-8">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+              <svg class="text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold ml-4">Appointment Scheduling: 
+</h3>
+          </div>
+          <p class="text-gray-700">TTLB can assist in scheduling initial consultations or appointments between potential clients and attorneys. TLB can manage calendars, coordinate availability, and communicate with both parties to ensure smooth scheduling.
+
+</p>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div class="bg-white shadow-lg rounded-lg p-8">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+              <svg class="text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold ml-4">Appointment Scheduling: 
+</h3>
+          </div>
+          <p class="text-gray-700">TTLB can assist in scheduling initial consultations or appointments between potential clients and attorneys. TLB can manage calendars, coordinate availability, and communicate with both parties to ensure smooth scheduling.
+
+</p>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div class="bg-white shadow-lg rounded-lg p-8">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+              <svg class="text-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold ml-4">Appointment Scheduling: 
+</h3>
+          </div>
+          <p class="text-gray-700">TTLB can assist in scheduling initial consultations or appointments between potential clients and attorneys. TLB can manage calendars, coordinate availability, and communicate with both parties to ensure smooth scheduling.
+
+</p>
+        </div>
+        </SwiperSlide>
+      </Swiper>
+    </>
+  );
 }
-
-export default Four

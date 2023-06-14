@@ -11,7 +11,7 @@ const page = () => {
     <>
  <First></First>
  <Second></Second>
- <Third></Third>
+ {/* <Third></Third> */}
  <Four></Four>
  <Faq></Faq>
  
