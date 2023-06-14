@@ -20,7 +20,7 @@ const First = () => {
       Outsourced paralegal services involve contracting with a third-party provider like TLB to handle various legal support tasks and responsibilities typically performed by in-house paralegals. TLB is a specialized firm that employ paralegals with expertise in different areas of law.
 <br>
 </br>
-Here are some common paralegal services which are typically outsourced to TLB:
+
 
       </p>
       <form action="" className="mt-8 flex items-start space-x-2">
