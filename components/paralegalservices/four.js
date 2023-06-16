@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "./styles.css";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
+import {Autoplay, EffectCoverflow, Pagination } from "swiper";
 
 export default function Four() {
   const cardData = [
@@ -46,10 +46,7 @@ export default function Four() {
       title: "Increased agility and competitiveness",
       description: "Outsourcing to TLB paralegal support allows organizations to stay agile and competitive in a rapidly changing legal landscape. They can quickly adapt to new projects, expand their services, and meet client demands without being constrained by limited in-house resources.",
     },
-    {
-      title: "Important note",
-      description: "It's important to note that outsourcing paralegal support does not replace the need for qualified attorneys. Rather, it complements legal expertise by providing additional support and resources, enabling legal professionals to operate more efficiently and effectively.",
-    }
+
   ];
   
   return (
@@ -69,6 +66,7 @@ export default function Four() {
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
+        loop={true}
         slidesPerView={"auto"}
         coverflowEffect={{
           rotate: 50,
@@ -78,7 +76,11 @@ export default function Four() {
           slideShadows: true,
         }}
         pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay,EffectCoverflow, Pagination]}
         className="mySwiper"
       >
         {/* Step 2: Map the card data to the SwiperSlides */}
@@ -107,6 +109,26 @@ export default function Four() {
           </SwiperSlide>
         ))}
       </Swiper>
+
+    <div  className="m-4">
+    <div className="max-w-full p-6 overflow-hidden  rounded-lg shadow bg-gray-900 text-gray-100">
+	<article>
+		<h2 className="text-xl font-bold text-center mb-2">It&apos;s important</h2>
+    <p className="font-semibold text-md">
+    &quot;It&apos;s important to note that outsourcing paralegal support does not replace the need for qualified attorneys. Rather, it complements legal expertise by providing additional support and resources, enabling legal professionals to operate more efficiently and effectively.&quot;
+    </p>
+
+		<p className="mt-4 text-gray-400"></p>
+		{/* <div className="flex items-center mt-8 space-x-4">
+			<img src="https://source.unsplash.com/100x100/?portrait" alt="" className="w-10 h-10 rounded-full bg-gray-500" />
+			<div>
+				<h3 className="text-sm font-medium">Leroy Jenkins</h3>
+				<time datetime="2021-02-18" className="text-sm text-gray-400">Feb 18th 2021</time>
+			</div>
+		</div> */}
+	</article>
+</div>
+    </div>
       
     </>
   );
