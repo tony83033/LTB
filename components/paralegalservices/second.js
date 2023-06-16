@@ -22,12 +22,22 @@ const Second = () => {
 		</div>
 		<div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
 			<div>
-			<div className='shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid border-4 border-black-900 rounded-md' data-aos="fade-right">
-				<h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-gray-50">Legal Research: 
-</h3>
-				<p className="mt-3 text-lg dark:text-gray-400">TLB Paralegals can conduct legal research on specific issues, case law, statutes, and regulations. They can gather relevant information, analyze legal precedents, and provide summaries or briefs to assist attorneys in their case preparation.
+
+<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid border-4 border-black-900 rounded-md" data-aos="fade-right">
+						<div className="flex-shrink-0">
+							<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
+									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+							</div>
+						</div>
+						<div className="ml-4">
+							<h4 className="text-lg font-medium leading-6 dark:text-gray-50">Legal Research
+</h4>
+							<p className="mt-2 dark:text-gray-400">TLB Paralegals can conduct legal research on specific issues, case law, statutes, and regulations. They can gather relevant information, analyze legal precedents, and provide summaries or briefs to assist attorneys in their case preparation.
 </p>
-</div>
+						</div>
+					</div>
 				<div className="mt-12 space-y-12">
 					<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid border-4 border-black-900 rounded-md" data-aos="fade-right">
 						<div className="flex-shrink-0">
@@ -83,12 +93,25 @@ const Second = () => {
 		<div>
 			<div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
 				<div className="lg:col-start-2">
-					<div className='shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid border-4 border-black-900 rounded-md' data-aos="fade-left">
-					<h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-gray-50">Contract Management: 
-</h3>
-					<p className="mt-3 text-lg dark:text-gray-400">TLB Paralegals can help with contract management tasks, such as reviewing contracts, identifying key terms and risks, maintaining contract databases, and tracking contract deadlines and obligations.
+	
+<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid border-4 border-black-900 rounded-md" data-aos="fade-right">
+						<div className="flex-shrink-0">
+							<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
+									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+							</div>
+						</div>
+						<div className="ml-4">
+							<h4 className="text-lg font-medium leading-6 dark:text-gray-50">Contract Management
+</h4>
+							<p className="mt-2 dark:text-gray-400">TLB Paralegals can help with contract management tasks, such as reviewing contracts, identifying key terms and risks, maintaining contract databases, and tracking contract deadlines and obligations.
 </p>
-</div>
+						</div>
+					</div>
+
+
+
 					<div className="mt-12 space-y-12">
 						<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid border-4 border-black-900 rounded-md" >
 							<div className="flex-shrink-0" data-aos="fade-left">
@@ -186,7 +209,7 @@ const Second = () => {
   Button text
 </button> */}
 
-<form action="" className="mt-8 flex items-start space-x-2">
+{/* <form action="" className="mt-8 flex items-start space-x-2">
         <div>
           <input
             className="flex w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
@@ -208,7 +231,7 @@ const Second = () => {
             Book Appointment
           </button>
         </div>
-      </form>
+      </form> */}
 
     </div>
   </div>
