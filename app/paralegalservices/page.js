@@ -5,6 +5,7 @@ import Second from '@/components/paralegalservices/second'
 import Third from '@/components/paralegalservices/third'
 import Four from '@/components/paralegalservices/four'
 import Faq from '@/components/paralegalservices/faq'
+import Five from '@/components/paralegalservices/five'
 const page = () => {
   return (
   <React.Fragment>
@@ -13,6 +14,7 @@ const page = () => {
  <Second></Second>
  {/* <Third></Third> */}
  <Four></Four>
+ <Five></Five>
  <Faq></Faq>
  
   
