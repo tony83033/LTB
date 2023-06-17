@@ -150,7 +150,7 @@ const Five = () => {
     <React.Fragment>
       <div className="grid grid-cols-4 gap-4 m-4">
         {data.map((item, index) => (
-          <div className="flip-card" key={index}>
+          <div className="flip-card" key={index} data-aos="fade-up">
             <div className="flip-card-inner">
               <div className="flip-card-front bg-white">
                 <h1 className="text-xl text-center justify-center mt-4">
