@@ -77,7 +77,7 @@ export default function Four() {
         }}
         pagination={true}
         autoplay={{
-          delay: 1500,
+          delay: 3500,
           disableOnInteraction: false,
         }}
         modules={[Autoplay,EffectCoverflow, Pagination]}
