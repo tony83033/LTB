@@ -8,8 +8,9 @@ import Faq from '@/components/paralegalservices/faq'
 import Five from '@/components/paralegalservices/five'
 const page = () => {
   return (
-  <React.Fragment>
+  <React.Fragment className="bg-white mx-4">
     <>
+    <div className=' bg-white'>
  <First></First>
  <Second></Second>
  {/* <Third></Third> */}
@@ -17,7 +18,7 @@ const page = () => {
  <Five></Five>
  <Faq></Faq>
  
-  
+ </div>
 </>
 
   </React.Fragment>

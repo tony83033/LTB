@@ -6,7 +6,7 @@ body {
 }
 
 body {
-  background: #eee;
+  background: white;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
@@ -78,4 +78,30 @@ body {
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1b269e;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

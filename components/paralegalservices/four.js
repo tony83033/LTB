@@ -51,9 +51,9 @@ export default function Four() {
   
   return (
      <>
-    
+    <div className="bg-white">
 
-      <div className="container mx-auto p-4 my-6 space-y-2 text-center">
+      <div className="container mx-auto p-4 my-6 space-y-2 text-center  mt-4 bg-w mb-4">
         <h2 className="text-3xl font-bold">
           Why Outsource Paralegal Support Services to TLB?
         </h2>
@@ -75,18 +75,18 @@ export default function Four() {
           modifier: 1,
           slideShadows: true,
         }}
-        pagination={true}
+        pagination={false}
         autoplay={{
           delay: 3500,
           disableOnInteraction: false,
         }}
         modules={[Autoplay,EffectCoverflow, Pagination]}
-        className="mySwiper"
+        className="mySwiper space-y-2"
       >
         {/* Step 2: Map the card data to the SwiperSlides */}
         {cardData.map((card, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-white shadow-lg rounded-lg p-8">
+            <div className="bg-white shadow-lg rounded-lg p-8 ">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
                   <svg
@@ -110,7 +110,7 @@ export default function Four() {
         ))}
       </Swiper>
 
-    <div  className="m-4">
+    <div  className="m-4 mt-8">
     <div className="max-w-full p-6 overflow-hidden  rounded-lg shadow bg-gray-900 text-gray-100" >
 	<article data-aos="flip-down">
 		<h2 className="text-xl font-bold text-center mb-2">It&apos;s important</h2>
@@ -129,7 +129,8 @@ export default function Four() {
 	</article>
 </div>
     </div>
-      
+   <hr></hr>
+   </div>
     </>
   );
 }

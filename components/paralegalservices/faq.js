@@ -9,7 +9,7 @@ const Faq = () => {
 
   return (
     <React.Fragment>
-      <section className="bg-gray-800 text-gray-100 mt-4">
+      <section className="bg-gray-800 text-gray-100 mt-4 mx-4">
         <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
           <p className="p-2 text-sm font-medium tracking-wider text-center uppercase">
             How it works

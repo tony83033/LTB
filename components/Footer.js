@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-  <React.Fragment>
-    <footer className="px-4 py-10">
+  <React.Fragment className="bg-white">
+    <footer className="px-4 py-10 mx-4 bg-white">
   <div className="flex flex-col md:flex-row md:items-center">
     <span>
       {/* <svg

@@ -1,8 +1,9 @@
-import React from 'react';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import AOS from 'aos';
+
 import 'aos/dist/aos.css';
 import Image from 'next/image';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Five = () => {
   useEffect(() => {
@@ -148,34 +149,135 @@ const Five = () => {
 
   return (
     <React.Fragment>
-      <div className="grid grid-cols-4 gap-4 m-4">
-        {data.map((item, index) => (
-          <div className="flip-card" key={index} data-aos="fade-up">
-            <div className="flip-card-inner">
-              <div className="flip-card-front bg-white">
-                <h1 className="text-xl text-center justify-center mt-4">
-                  {item.title}
-                </h1>
-                <Image
-                  src="/management.png"
-                  className="justify-center mx-auto my-auto mt-2"
-                  width={100}
-                  height={100}
-                />
-              </div>
-              <div className="flip-card-back overflow-auto">
-                <h1 className="text-xl text-center justify-center mt-4">
-                  {item.title}
-                </h1>
-                <ul className="list-decimal space-y-4 mt-2">
-                  {item.details.map((detail, index) => (
-                    <li key={index}>{detail}</li>
+
+      <div className='m-4 space-y-3'>
+      <div className="max-w-full px-8 py-4 bg-white rounded-lg shadow-md dark:bg-gray-800 hover:shadow-xl cursor-pointer" data-aos="fade-down">
+  <div className="flex items-center justify-between">
+    <span className="text-sm font-light text-gray-600 dark:text-gray-400">
+     
+    </span>
+    {/* <a
+      className="px-3 py-1 text-sm font-bold text-gray-100 transition-colors duration-300 transform bg-gray-600 rounded cursor-pointer hover:bg-gray-500"
+      tabIndex={0}
+      role="button"
+    >
+      Design
+    </a> */}
+  </div>
+  <div className="mt-2">
+    <a
+      href="#"
+      className="text-xl font-bold text-gray-700 dark:text-white hover:text-gray-600 dark:hover:text-gray-200 hover:underline"
+      tabIndex={0}
+      role="link"
+    >
+     TLBs Paralegal Services
+
+    </a>
+    <p className="mt-2 text-gray-600 dark:text-gray-300">
+    We at The Legal Base understand the burden an attorney or a lawyer goes through. That is why we offer custom paralegal support services that are specially designed to suit your unique needs. Below mentioned are our portfolio of paralegal services that can be outsourced to us.
+
+    </p>
+  </div>
+  <div className="flex items-center justify-between mt-4">
+    {/* <a
+      href="#"
+      className="text-blue-600 dark:text-blue-400 hover:underline"
+      tabIndex={0}
+      role="link"
+    >
+      Read more
+    </a> */}
+    <div className="flex items-center">
+      <img
+        className="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block"
+        src="/law2.png"
+        alt="avatar"
+      />
+      <a
+        className="font-bold text-gray-700 cursor-pointer dark:text-gray-200"
+        tabIndex={0}
+        role="link"
+      >
+        Khatab wedaa
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+      <section className="bg-white dark:bg-gray-900">
+        <div className="container px-6 py-8 mx-auto">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {data.map((item, index) => (
+              <article
+                key={index} data-aos="zoom-in-down"
+                className="rounded-xl border border-gray-700 bg-gray-800 p-4 h-80  overflow-auto"
+              >
+                <div className="flex items-center gap-4">
+                  <img
+                    alt="Developer"
+                    src="/law.png"
+                    className="h-16 w-16 rounded-full object-cover"
+                  />
+                  <div>
+                    <h3 className="text-lg font-medium text-white">
+                      {item.title}
+                    </h3>
+                    {/* <div className="flow-root">
+                      <ul className="-m-1 flex flex-wrap">
+                        <li className="p-1 leading-none">
+                          <a
+                            href="#"
+                            className="text-xs font-medium text-gray-300"
+                          >
+                            Twitter
+                          </a>
+                        </li>
+                        <li className="p-1 leading-none">
+                          <a
+                            href="#"
+                            className="text-xs font-medium text-gray-300"
+                          >
+                            GitHub
+                          </a>
+                        </li>
+                        <li className="p-1 leading-none">
+                          <a
+                            href="#"
+                            className="text-xs font-medium text-gray-300"
+                          >
+                            Website
+                          </a>
+                        </li>
+                      </ul>
+                    </div> */}
+                  </div>
+                </div>
+                <ul className="mt-4 space-y-2">
+                  {item.details.map((detail, idx) => (
+                    <li key={idx}>
+                      <a
+                        href="#"
+                        className="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600"
+                      >
+                        <strong className="font-medium text-white">
+                          {idx + 1}
+                        </strong>
+                        <p className="mt-1 text-xs font-medium text-gray-300">
+                          {detail}
+                        </p>
+                      </a>
+                    </li>
                   ))}
                 </ul>
-              </div>
-            </div>
+              </article>
+            ))}
           </div>
-        ))}
+        </div>
+      </section>
       </div>
     </React.Fragment>
   );
