@@ -149,7 +149,7 @@ const Five = () => {
 
   return (
     <React.Fragment>
-
+      <div className='mx-auto w-5/6'>
       <div className='m-4 space-y-3'>
       <div className="max-w-full px-8 py-4 bg-white rounded-lg shadow-md dark:bg-gray-800 hover:shadow-xl cursor-pointer" data-aos="fade-down">
   <div className="flex items-center justify-between">
@@ -208,65 +208,42 @@ const Five = () => {
 
 
 
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white dark:bg-white-900">
         <div className="container px-6 py-8 mx-auto">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {data.map((item, index) => (
               <article
                 key={index} data-aos="zoom-in-down"
-                className="rounded-xl border border-gray-700 bg-gray-800 p-4 h-80  overflow-auto"
+                className="rounded-xl border-2 border-gray-700 bg-white-050 shadow-xl hover:shadow-2xl p-4 h-80  overflow-auto"
               >
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 sticky">
                   <img
                     alt="Developer"
                     src="/law.png"
                     className="h-16 w-16 rounded-full object-cover"
                   />
                   <div>
-                    <h3 className="text-lg font-medium text-white">
+                    <h3 className="text-lg font-medium text-black">
                       {item.title}
                     </h3>
-                    {/* <div className="flow-root">
-                      <ul className="-m-1 flex flex-wrap">
-                        <li className="p-1 leading-none">
-                          <a
-                            href="#"
-                            className="text-xs font-medium text-gray-300"
-                          >
-                            Twitter
-                          </a>
-                        </li>
-                        <li className="p-1 leading-none">
-                          <a
-                            href="#"
-                            className="text-xs font-medium text-gray-300"
-                          >
-                            GitHub
-                          </a>
-                        </li>
-                        <li className="p-1 leading-none">
-                          <a
-                            href="#"
-                            className="text-xs font-medium text-gray-300"
-                          >
-                            Website
-                          </a>
-                        </li>
-                      </ul>
-                    </div> */}
+                    
                   </div>
                 </div>
-                <ul className="mt-4 space-y-2">
+
+
+
+
+                <ul className="mt-4 space-y-2  mx-auto w-full ">
                   {item.details.map((detail, idx) => (
-                    <li key={idx}>
+                    <li key={idx} className="">
                       <a
                         href="#"
-                        className="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600"
+                        className="block h-full rounded-xl  p-2 "
                       >
-                        <strong className="font-medium text-white">
+                        {/* <strong className="font-medium text-black">
                           {idx + 1}
-                        </strong>
-                        <p className="mt-1 text-xs font-medium text-gray-300">
+                        </strong> */}
+                        <p className="mt-1 text-xs font-medium text-black">
                           {detail}
                         </p>
                       </a>
@@ -278,6 +255,7 @@ const Five = () => {
           </div>
         </div>
       </section>
+      </div>
       </div>
     </React.Fragment>
   );

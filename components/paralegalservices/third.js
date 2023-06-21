@@ -12,7 +12,7 @@ const Third = () => {
       });
   return (
     <React.Fragment>
-        <div className="mx-auto my-12 max-w-7xl md:my-24 lg:my-32 ">
+        <div className="mx-auto my-12 w-5/6 mt-4 md:my-24 lg:my-32 ">
   <div className="lg:grid lg:grid-cols-12 lg:gap-x-6">
     <div className="px-4 py-10 lg:col-span-5 lg:px-0 m-2">
       <span className="mb-8 inline-block rounded-full border p-1 px-3 text-xs font-semibold">

@@ -51,7 +51,7 @@ export default function Four() {
   
   return (
      <>
-    <div className="bg-white">
+    <div className="bg-white mx-auto w-5/6">
 
       <div className="container mx-auto p-4 my-6 space-y-2 text-center  mt-4 bg-w mb-4">
         <h2 className="text-3xl font-bold">
@@ -110,7 +110,7 @@ export default function Four() {
         ))}
       </Swiper>
 
-    <div  className="m-4 mt-8">
+    <div  className="m-4 mt-8 mb-4">
     <div className="max-w-full p-6 overflow-hidden  rounded-lg shadow bg-gray-900 text-gray-100" >
 	<article data-aos="flip-down">
 		<h2 className="text-xl font-bold text-center mb-2">It&apos;s important</h2>

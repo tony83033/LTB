@@ -13,7 +13,7 @@ const Second = () => {
       });
   return (
    <React.Fragment>
-	<div className='bg-white'>
+	<div className='bg-white  w-5/6 mx-auto'>
     <section className="dark:bg-white dark:text-gray-100 bg-white">
 	<div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
 		<div data-aos="fade-down">

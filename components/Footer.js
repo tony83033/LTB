@@ -2,9 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-  <React.Fragment className="bg-white">
-    <footer className="px-4 py-10 mx-4 bg-white">
-  <div className="flex flex-col md:flex-row md:items-center">
+  <React.Fragment className="bg-black w-5/6 mx-auto">
+    <footer className="px-24  py-10 bg-gray-800 w-5/6 mx-auto ">
+  <div className="flex flex-col md:flex-row md:items-center ">
     <span>
       {/* <svg
       width="40"
@@ -23,7 +23,7 @@ const Footer = () => {
       <p className="text-base font-semibold text-gray-700">LTB</p>
     </div> */}
   </div>
-  <div className="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+  <div className="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8  ">
     <div className="mb-8 lg:mb-0">
       <p className="mb-6 text-lg font-semibold text-gray-700">Company</p>
       <ul className="flex flex-col space-y-4 text-[14px] font-medium text-gray-500">
@@ -34,6 +34,7 @@ const Footer = () => {
         <li>Press Release</li>
       </ul>
     </div>
+
     <div className="mb-8 lg:mb-0">
       <p className="mb-6 text-lg font-semibold text-gray-700">Our Stores</p>
       <ul className="flex flex-col space-y-4 text-[14px] font-medium text-gray-500">
