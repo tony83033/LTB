@@ -4,7 +4,7 @@ import Link from 'next/link';
 import {MdCancel} from 'react-icons/md'
 import Image from 'next/image';
 import { CheckCircle, ChevronDown, ChevronUp, Menu, Star, X } from 'lucide-react'
-const Navbar = () => {
+const Navbar = ({handleFont}) => {
 
 
   const menuItems = [
@@ -48,7 +48,7 @@ const Navbar = () => {
 
 
       <header className="relative w-full border-b bg-white pb-4 shadow-md">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2">
+        <div className="mx-auto flex w-4/6 items-center justify-between px-4 py-2">
           <div className="inline-flex items-center space-x-2">
             <span>
               {/* <svg
@@ -110,19 +110,22 @@ const Navbar = () => {
     ))}
     <li>
       <button
+
         onClick={toggleCart}
         className="text-sm font-semibold text-gray-800 hover:text-gray-900"
       >
         Services
       </button>
     </li>
+
+    <li></li>
   </ul>
 </div>
 
           <div className="hidden lg:block">
             <button
               type="button"
-              onClick={toggleCart}
+              onClick={handleFont('varel')}  
               className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             >
               Services

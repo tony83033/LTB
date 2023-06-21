@@ -214,14 +214,16 @@ const Five = () => {
             {data.map((item, index) => (
               <article
                 key={index} data-aos="zoom-in-down"
-                className="rounded-xl border-2 border-gray-700 bg-white-050 shadow-xl hover:shadow-2xl p-4 h-80  overflow-auto"
+             className="rounded-xl border-2  border-gray-700 bg-white-050 shadow-xl hover:shadow-2xl p-4 h-80  "
               >
-                <div className="flex items-center gap-4 sticky">
+                <div className="flex items-center gap-4 s border-2 border-black-500 p-2 shadow-lg rounded-lg hover:rounded-xl hover:shadow-xl" >
                   <img
                     alt="Developer"
                     src="/law.png"
                     className="h-16 w-16 rounded-full object-cover"
                   />
+
+
                   <div>
                     <h3 className="text-lg font-medium text-black">
                       {item.title}
@@ -232,8 +234,8 @@ const Five = () => {
 
 
 
-
-                <ul className="mt-4 space-y-2  mx-auto w-full ">
+<div className=' w-full h-48   overflow-auto  shadow-sm  '>
+                <ul className="mt-4 space-y-2  mx-auto w-full  ">
                   {item.details.map((detail, idx) => (
                     <li key={idx} className="">
                       <a
@@ -250,6 +252,7 @@ const Five = () => {
                     </li>
                   ))}
                 </ul>
+                </div>
               </article>
             ))}
           </div>

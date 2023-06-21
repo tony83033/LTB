@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "./styles.css";
 
 // import required modules
-import {Autoplay, EffectCoverflow, Pagination } from "swiper";
+import { EffectCoverflow, Pagination } from "swiper";
 
 export default function Four() {
   const cardData = [
@@ -80,7 +80,7 @@ export default function Four() {
           delay: 3500,
           disableOnInteraction: false,
         }}
-        modules={[Autoplay,EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow, Pagination]}
         className="mySwiper space-y-2"
       >
         {/* Step 2: Map the card data to the SwiperSlides */}
