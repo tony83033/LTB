@@ -155,9 +155,9 @@ const Five = () => {
 
 
 
-      <div className="max-w-full px-8 py-4 bg-white rounded-lg shadow-md dark:bg-gray-800 hover:shadow-xl cursor-pointer" data-aos="fade-down">
+      <div className="max-w-full px-8 py-4 bg-white rounded-lg shadow-md  hover:shadow-xl cursor-pointer" data-aos="fade-down">
   <div className="flex items-center justify-between">
-    <span className="text-sm font-light text-gray-600 dark:text-gray-400">
+    <span className="text-sm font-light text-gray-600 ">
      
     </span>
    
@@ -192,13 +192,7 @@ const Five = () => {
         src="/law2.png"
         alt="avatar"
       />
-      <a
-        className="font-bold text-gray-700 cursor-pointer dark:text-gray-200"
-        tabIndex={0}
-        role="link"
-      >
-        Khatab wedaa
-      </a>
+     
     </div>
   </div>
 

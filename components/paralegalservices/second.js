@@ -13,7 +13,7 @@ const Second = () => {
       });
   return (
    <React.Fragment>
-	<div className='bg-white   sm:w-5/6 w-full md:w-5/6 lg:5/6 mx-auto'>
+	<div className='bg-white    sm:w-5/6 w-full md:w-5/6 lg:5/6 mx-auto'>
     <section className="dark:bg-white dark:text-gray-100 bg-white">
 	<div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
 		<div data-aos="fade-down">
@@ -181,59 +181,13 @@ const Second = () => {
       }}
     />
     <div className="flex flex-col w-full p-6 lg:w-2/3 md:p-8 lg:p-12">
-      {/* <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="w-8 h-8 mb-8 dark:text-violet-400"
-      >
-        <path
-          fillRule="evenodd"
-          d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-          clipRule="evenodd"
-        />
-      </svg> */}
+  
       <h2 className="text-xl font-semibold leading-loose">
       By outsourcing paralegal services to TLB, law firms and legal departments can access specialized expertise, scale their resources as needed, reduce costs, and increase efficiency. It allows attorneys to focus on core legal work while leveraging the support of qualified paralegals for various legal tasks.
 
       </h2>
-      {/* <p className="mt-4 mb-8 text-sm">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatum
-        rem amet!
-      </p> */}
-      {/* <button className="self-start px-10 py-3 text-lg font-medium rounded-3xl bg-black-900">
-        Get started
-      </button> */}
-      {/* <button
-  type="button"
-  className="rounded-full bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
->
-  Button text
-</button> */}
 
-{/* <form action="" className="mt-8 flex items-start space-x-2">
-        <div>
-          <input
-            className="flex w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-            type="email"
-            placeholder="Enter your email"
-            id="email"
-          />
-          <br></br>
-          <p className="mt-2 text-sm text-gray-500">
 
-        
-          </p>
-        </div>
-        <div>
-          <button
-            type="button"
-            className="rounded-md bg-black px-3 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-          >
-            Book Appointment
-          </button>
-        </div>
-      </form> */}
 
     </div>
   </div>

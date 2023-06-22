@@ -8,18 +8,21 @@ import Faq from '@/components/paralegalservices/faq'
 import Five from '@/components/paralegalservices/five'
 const page = () => {
   return (
-  <React.Fragment className="bg-white mx-4">
-    <>
-    <div className=' bg-white'>
+  <React.Fragment>
+
+    <div className='relative'>
+  
  <First></First>
+
+
  <Second></Second>
  {/* <Third></Third> */}
- <Four></Four>
+  <Four></Four>
  <Five></Five>
- <Faq></Faq>
+ <Faq></Faq> 
  
  </div>
-</>
+
 
   </React.Fragment>
   )
