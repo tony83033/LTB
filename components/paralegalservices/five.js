@@ -157,7 +157,7 @@ const Five = () => {
 
       <div className="max-w-full px-8 py-4 bg-white rounded-lg shadow-md  hover:shadow-xl cursor-pointer" data-aos="fade-down">
   <div className="flex items-center justify-between">
-    <span className="text-sm font-light text-gray-600 ">
+    <span className="text-md font-bold text-black ">
      
     </span>
    
@@ -172,7 +172,7 @@ const Five = () => {
      TLBs Paralegal Services
 
     </a>
-    <p className="mt-2 text-gray-600 dark:text-gray-300">
+    <p className="mt-2 text-black font-semibold ">
     We at The Legal Base understand the burden an attorney or a lawyer goes through. That is why we offer custom paralegal support services that are specially designed to suit your unique needs. Below mentioned are our portfolio of paralegal services that can be outsourced to us.
 
     </p>

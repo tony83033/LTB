@@ -19,7 +19,7 @@ const First = () => {
  Outsourced Paralegal Services
 
       </h1>
-      <p className="mt-8 text-lg text-gray-700">
+      <p className="mt-8 text-lg font-bold text-gray-700">
       Outsourced paralegal services involve contracting with a third-party provider like TLB to handle various legal support tasks and responsibilities typically performed by in-house paralegals. TLB is a specialized firm that employ paralegals with expertise in different areas of law.
 <br>
 </br>
