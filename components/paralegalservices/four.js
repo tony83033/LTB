@@ -51,7 +51,7 @@ export default function Four() {
   
   return (
      <>
-    <div className="bg-white mx-auto w-5/6">
+    <div className="bg-transparent mx-auto w-5/6">
 
       <div className="container mx-auto p-4 my-6 space-y-2 text-center  mt-4 bg-w mb-4">
         <h2 className="text-3xl font-bold">
@@ -73,7 +73,7 @@ export default function Four() {
           stretch: 0,
           depth: 100,
           modifier: 1,
-          slideShadows: true,
+         shadow: true,
         }}
         pagination={false}
         autoplay={{
@@ -86,7 +86,7 @@ export default function Four() {
         {/* Step 2: Map the card data to the SwiperSlides */}
         {cardData.map((card, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-white shadow-2xl opacity-100  rounded-lg p-8 ">
+            <div className="bg-white tiles rounded-b-xl shadow-gray-700 shadow-xl rounded-t-lg    p-8 ">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
                   <svg
@@ -129,7 +129,7 @@ export default function Four() {
 	</article>
 </div>
     </div>
-   <hr></hr>
+
    </div>
     </>
   );

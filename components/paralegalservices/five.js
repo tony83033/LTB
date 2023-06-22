@@ -155,24 +155,31 @@ const Five = () => {
 
 
 
-      <div className="max-w-full px-8 py-4 bg-white rounded-lg shadow-md  hover:shadow-xl cursor-pointer" data-aos="fade-down">
+      <div className="max-w-full px-8 py-4 bg-[#f8fafc] rounded-lg shadow-gray-400   cursor-pointer" data-aos="fade-down">
   <div className="flex items-center justify-between">
     <span className="text-md font-bold text-black ">
-     
+      <div className='flex items-center justify-between'>
+    <img
+        className="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block"
+        src="/law2.png"
+        alt="avatar"
+      />
+
+<p
+
+className="text-xl font-bold text-black dark:text-white  dark:hover:text-white-500  "
+
+>
+TLBs Paralegal Services
+
+</p>
+</div>
     </span>
    
   </div>
   <div className="mt-2">
-    <a
-      href="#"
-      className="text-xl font-bold text-gray-700 dark:text-white hover:text-gray-600 dark:hover:text-gray-200 hover:underline"
-      tabIndex={0}
-      role="link"
-    >
-     TLBs Paralegal Services
-
-    </a>
-    <p className="mt-2 text-black font-semibold ">
+   
+    <p className="mt-2 lg:px-16 sm:px-12  px-0 text-black font-semibold dark:text-white ">
     We at The Legal Base understand the burden an attorney or a lawyer goes through. That is why we offer custom paralegal support services that are specially designed to suit your unique needs. Below mentioned are our portfolio of paralegal services that can be outsourced to us.
 
     </p>
@@ -187,18 +194,14 @@ const Five = () => {
       Read more
     </a> */}
     <div className="flex items-center">
-      <img
-        className="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block"
-        src="/law2.png"
-        alt="avatar"
-      />
+     
      
     </div>
   </div>
 
   {/* ============================================================== */}
 
-      <section className="bg-white dark:bg-white-90 mt-4">
+      <section className="bg-[#f8fafc] dark:bg-white-90 mt-4">
         <div className="container px-6 py-8 mx-auto">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {data.map((item, index) => (

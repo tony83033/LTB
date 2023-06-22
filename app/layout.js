@@ -27,7 +27,7 @@ const varel = Varela_Round({subsets:['latin'],
 });
 
   const merri = Merriweather({subsets:['latin'],
-  weight :'400'
+  weight :'300'
 });
 
 
@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
   }
   return (
     <html lang="en">
-      <body className={robotoslab.className}>
+      <body className={merri.className}>
         {/* <div className='w-full'> */}
           <Navbar handleFont={handleFont}></Navbar>
         {children}

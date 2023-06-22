@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-  <React.Fragment className="bg-black w-full mx-auto">
+  <React.Fragment className="bg-[#1E293B] w-full mx-auto">
     <footer className="px-24  py-10 bg-gray-800 w-full mx-auto ">
   <div className="flex flex-col md:flex-row md:items-center ">
     <span>
