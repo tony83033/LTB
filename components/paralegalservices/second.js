@@ -41,7 +41,7 @@ const Second = () => {
 						</div>
 					</div>
 				<div className="mt-12 space-y-12">
-					<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid border-4 border-black-900 rounded-md" data-aos="fade-right">
+					<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" data-aos="fade-right">
 						<div className="flex-shrink-0">
 							<div className="flex items-center justify-center w-12 h-[100] rounded-md dark:bg-violet-400 dark:text-gray-900">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
@@ -56,7 +56,7 @@ const Second = () => {
 </p>
 						</div>
 					</div>
-					<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid border-4 border-black-900 rounded-md" data-aos="fade-right">
+					<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" data-aos="fade-right">
 						<div className="flex-shrink-0">
 							<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
@@ -71,7 +71,7 @@ const Second = () => {
 </p>
 						</div>
 					</div>
-					<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid border-4 border-black-900 rounded-md" data-aos="fade-right">
+					<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" data-aos="fade-right">
 						<div className="flex-shrink-0">
 							<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
@@ -96,7 +96,7 @@ const Second = () => {
 			<div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
 				<div className="lg:col-start-2">
 	
-<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid border-4 border-black-900 rounded-md" data-aos="fade-right">
+<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" data-aos="fade-right">
 						<div className="flex-shrink-0">
 							<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
@@ -115,7 +115,7 @@ const Second = () => {
 
 
 					<div className="mt-12 space-y-12">
-						<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid border-4 border-black-900 rounded-md" >
+						<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" >
 							<div className="flex-shrink-0" data-aos="fade-left">
 								<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
@@ -129,7 +129,7 @@ const Second = () => {
 								<p className="mt-2 dark:text-gray-400">TLB Paralegals can provide assistance with corporate governance matters, including preparing board meeting minutes, drafting resolutions, maintaining corporate records, and assisting with compliance-related tasks.</p>
 							</div>
 						</div>
-						<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid border-4 border-black-900 rounded-md" data-aos="fade-left">
+						<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" data-aos="fade-left">
 							<div className="flex-shrink-0">
 								<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
@@ -144,7 +144,7 @@ const Second = () => {
 </p>
 							</div>
 						</div>
-						<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid border-4 border-black-900 rounded-md" data-aos="fade-left">
+						<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" data-aos="fade-left">
 							<div className="flex-shrink-0">
 								<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">

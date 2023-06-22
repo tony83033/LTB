@@ -111,7 +111,7 @@ export default function Four() {
       </Swiper>
 
     <div  className="m-4 mt-8 mb-4">
-    <div className="max-w-full p-6 overflow-hidden  rounded-lg shadow bg-gray-900 text-gray-100" >
+    <div className="max-w-full p-6 overflow-hidden  rounded-lg shadow bg-[#1E293B] text-gray-100" >
 	<article data-aos="flip-down">
 		<h2 className="text-xl font-bold text-center mb-2">It&apos;s important</h2>
     <p className="font-semibold text-md">
