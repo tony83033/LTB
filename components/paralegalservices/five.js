@@ -149,20 +149,18 @@ const Five = () => {
 
   return (
     <React.Fragment>
-      <div className='mx-auto w-5/6'>
+      <div className='mx-auto  sm:w-5/6 w-full md:w-5/6 lg:5/6'>
       <div className='m-4 space-y-3'>
+
+
+
+
       <div className="max-w-full px-8 py-4 bg-white rounded-lg shadow-md dark:bg-gray-800 hover:shadow-xl cursor-pointer" data-aos="fade-down">
   <div className="flex items-center justify-between">
     <span className="text-sm font-light text-gray-600 dark:text-gray-400">
      
     </span>
-    {/* <a
-      className="px-3 py-1 text-sm font-bold text-gray-100 transition-colors duration-300 transform bg-gray-600 rounded cursor-pointer hover:bg-gray-500"
-      tabIndex={0}
-      role="button"
-    >
-      Design
-    </a> */}
+   
   </div>
   <div className="mt-2">
     <a
@@ -203,20 +201,21 @@ const Five = () => {
       </a>
     </div>
   </div>
-</div>
 
+  {/* ============================================================== */}
 
-
-
-      <section className="bg-white dark:bg-white-900">
+      <section className="bg-white dark:bg-white-90 mt-4">
         <div className="container px-6 py-8 mx-auto">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {data.map((item, index) => (
+
               <article
                 key={index} data-aos="zoom-in-down"
-             className="rounded-xl border-2  border-gray-700 bg-white-050 shadow-xl hover:shadow-2xl p-4 h-80  "
+             className="rounded-xl bg-white-050 shadow-xl border-t-2 border-gray-100 hover:shadow-2xl  h-80  "
               >
-                <div className="flex items-center gap-4 s border-2 border-black-500 p-2 shadow-lg rounded-lg hover:rounded-xl hover:shadow-xl" >
+
+                <div className='w-full'>
+                <div className="flex items-center gap-4   p-2 shadow-lg rounded-t-lg hover:rounded-t-xl hover:shadow-xl" >
                   <img
                     alt="Developer"
                     src="/law.png"
@@ -225,11 +224,12 @@ const Five = () => {
 
 
                   <div>
-                    <h3 className="text-lg font-medium text-black">
+                    <h3 className="text-lg  font-medium text-black">
                       {item.title}
                     </h3>
                     
                   </div>
+                </div>
                 </div>
 
 
@@ -258,6 +258,27 @@ const Five = () => {
           </div>
         </div>
       </section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
       </div>
     </React.Fragment>

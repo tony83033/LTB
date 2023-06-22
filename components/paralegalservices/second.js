@@ -13,7 +13,7 @@ const Second = () => {
       });
   return (
    <React.Fragment>
-	<div className='bg-white  w-5/6 mx-auto'>
+	<div className='bg-white   sm:w-5/6 w-full md:w-5/6 lg:5/6 mx-auto'>
     <section className="dark:bg-white dark:text-gray-100 bg-white">
 	<div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
 		<div data-aos="fade-down">
@@ -24,7 +24,8 @@ const Second = () => {
 		<div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
 			<div>
 
-<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid border-4 border-black-900 rounded-md" data-aos="fade-right">
+<div className="flex shadow-lg p-4 hover:shadow-2xl hover:p-4 border-solid  rounded-md" data-aos="fade-right">
+
 						<div className="flex-shrink-0">
 							<div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">

@@ -1,15 +1,25 @@
 "use client"
 import './globals.css'
-import { Inter , Roboto ,Varela_Round, Merriweather} from 'next/font/google'
+import { Inter , Roboto ,Varela_Round, Merriweather , Noto_Sans, Roboto_Slab} from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { useState } from 'react'
+
+
+
 const inter = Inter({ subsets: ['latin'] })
 
 const roboto = Roboto( {subsets: ['latin'] ,
 weight: '400',
 });
 
+const noto = Noto_Sans({subsets:['latin'],
+  weight: '400'
+})
+
+const robotoslab = Roboto_Slab({subsets:['latin'],
+  weight: '300'
+})
 
 
 const varel = Varela_Round({subsets:['latin'],
@@ -36,7 +46,7 @@ export default function RootLayout({ children }) {
   }
   return (
     <html lang="en">
-      <body className={myfont.className}>
+      <body className={robotoslab.className}>
         {/* <div className='w-full'> */}
           <Navbar handleFont={handleFont}></Navbar>
         {children}
