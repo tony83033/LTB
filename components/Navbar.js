@@ -3,9 +3,38 @@ import React, { useState, useRef } from 'react';
 import Link from 'next/link';
 import {MdCancel} from 'react-icons/md'
 import Image from 'next/image';
-import { CheckCircle, ChevronDown, ChevronUp, Menu, Star, X } from 'lucide-react'
-const Navbar = () => {
+import { useContext } from 'react';
+import { Inter , Roboto ,Varela_Round, Merriweather , Noto_Sans, Roboto_Slab} from 'next/font/google';
+import contextVaue from '../context/Appcontext';
 
+import { CheckCircle, ChevronDown, ChevronUp, Menu, Star, X } from 'lucide-react'
+
+const inter = Inter({ subsets: ['latin'] })
+
+const roboto = Roboto( {subsets: ['latin'] ,
+weight: '400',
+});
+
+const noto = Noto_Sans({subsets:['latin'],
+  weight: '400'
+})
+
+const robotoslab = Roboto_Slab({subsets:['latin'],
+  weight: '300'
+})
+
+
+
+const varel = Varela_Round({subsets:['latin'],
+  weight: '400'
+});
+
+  const merri = Merriweather({subsets:['latin'],
+  weight :'300'
+});
+
+const Navbar = ({changeFont}) => {
+  
 
   const menuItems = [
     {
@@ -114,21 +143,109 @@ const Navbar = () => {
         onClick={toggleCart}
         className="text-sm font-semibold text-gray-800 hover:text-gray-900"
       >
-        Services
+        Services1
       </button>
     </li>
 
-    <li></li>
+    
+{/* ==========Font */}
+    <li>
+    <button
+
+//onClick={changeFont("merri")}
+onClick={()=>{changeFont(merri)}}
+
+className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+>
+merri
+</button>
+    
+    </li>
+
+
+    <li>
+    <button
+
+
+onClick={()=>{changeFont(varel)}}
+className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+>
+varel
+</button>
+    
+    </li>
+
+
+
+
+
+    <li>
+    <button
+
+
+onClick={()=>{changeFont(roboto)}}
+className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+>
+roboto
+</button>
+    
+    </li>
+
+
+
+    <li>
+    <button
+
+
+onClick={()=>{changeFont(robotoslab)}}
+className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+>
+robotoslab
+</button>
+    
+    </li>
+
+
+    <li>
+    <button
+
+
+onClick={()=>{changeFont(noto)}}
+className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+>
+noto
+</button>
+    
+    </li>
+
+
+
+
+    {/* <li>
+    <button
+
+
+onClick={()=>{changeFont(inter)}}
+className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+>
+inter
+</button>
+    
+    </li> */}
+
+    
   </ul>
 </div>
+
 
           <div className="hidden lg:block">
             <button
               type="button"
               onClick={toggleCart}
+
               className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             >
-              Services
+              Services2
             </button>
 
           </div>
