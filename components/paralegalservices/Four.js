@@ -155,7 +155,7 @@ const Four = () => {
 
 
 
-      <div className="max-w-full px-8 py-4 bg-[#f8fafc] rounded-lg shadow-gray-400   cursor-pointer" data-aos="fade-down">
+      <div className="max-w-full px-8 py-4 bg-[#f8fafc] dark:bg-[#1E293B] rounded-lg shadow-gray-400   cursor-pointer" data-aos="fade-down">
   <div className="flex items-center justify-between">
     <span className="text-md font-bold text-black ">
       <div className='flex items-center justify-between'>
@@ -201,7 +201,7 @@ TLBs Paralegal Services
 
   {/* ============================================================== */}
 
-      <section className="bg-[#f8fafc] dark:bg-white-90 mt-4">
+      <section className="bg-[#f8fafc] dark:bg-[#1E293B] dark:bg-white-900 mt-4">
         <div className="container px-6 py-8 mx-auto">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {data.map((item, index) => (
@@ -221,7 +221,7 @@ TLBs Paralegal Services
 
 
                   <div>
-                    <h3 className="text-lg  font-medium text-black">
+                    <h3 className="text-lg  dark:text-white font-medium text-black">
                       {item.title}
                     </h3>
                     
@@ -242,7 +242,7 @@ TLBs Paralegal Services
                         {/* <strong className="font-medium text-black">
                           {idx + 1}
                         </strong> */}
-                        <p className="mt-1 text-xs font-medium text-black">
+                        <p className="mt-1 text-xs dark:text-white font-medium text-black">
                           {detail}
                         </p>
                       </a>

@@ -3,37 +3,33 @@ import React, { useState, useRef } from 'react';
 import Link from 'next/link';
 import {MdCancel} from 'react-icons/md'
 import Image from 'next/image';
-import { useContext } from 'react';
-import { Inter , Roboto ,Varela_Round, Merriweather , Noto_Sans, Roboto_Slab} from 'next/font/google';
+  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
 import contextVaue from '../context/Appcontext';
 
-import { CheckCircle, ChevronDown, ChevronUp, Menu, Star, X } from 'lucide-react'
-
-const inter = Inter({ subsets: ['latin'] })
-
-const roboto = Roboto( {subsets: ['latin'] ,
-weight: '400',
-});
-
-const noto = Noto_Sans({subsets:['latin'],
-  weight: '400'
-})
-
-const robotoslab = Roboto_Slab({subsets:['latin'],
-  weight: '300'
-})
+import { Bold, CheckCircle, ChevronDown, ChevronUp, Menu, Star, X } from 'lucide-react'
 
 
 
-const varel = Varela_Round({subsets:['latin'],
-  weight: '400'
-});
 
-  const merri = Merriweather({subsets:['latin'],
-  weight :'300'
-});
 
-const Navbar = ({changeFont}) => {
+
+
+const Navbar = ({setTheam,theam}) => {
+
+  const handleTheam = ()=>{
+
+    if(theam===""){
+
+      setTheam("dark");
+
+    }else if(theam==="dark"){
+
+      setTheam("");
+
+    }
+  }
   
 
   const menuItems = [
@@ -76,7 +72,7 @@ const Navbar = ({changeFont}) => {
     <React.Fragment>
 
 
-      <header className=" w-full sticky top-0 z-50 opacity-100  border-b bg-white pb-4 shadow-md">
+      <header className=" w-full sticky top-0 z-50 opacity-100  border-b bg-white dark:bg-[#1E293B] pb-4 shadow-md">
         <div className="mx-auto flex w-5/6 items-center justify-between px-4 py-2">
           <div className="inline-flex items-center space-x-2">
             <span>
@@ -98,7 +94,7 @@ const Navbar = ({changeFont}) => {
               ></Image>
              {/* <img src="TlbLogoY.png" alt="Logo"/> */}
             </span>
-            <Link className="font-bold" href="/">T&nbsp;L&nbsp;B</Link>
+            <Link className="font-bold dark:text-white" href="/">T&nbsp;L&nbsp;B</Link>
             {/* <span className="font-bold">LTB</span> */}
           </div>
           {/* <div className="hidden lg:block">
@@ -131,7 +127,7 @@ const Navbar = ({changeFont}) => {
       <li key={item.name}>
         <a
           href={item.href}
-          className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+          className="text-sm font-semibold text-gray-800 dark:text-white hover:text-gray-900" 
         >
           {item.name}
         </a>
@@ -141,97 +137,18 @@ const Navbar = ({changeFont}) => {
       <button
 
         onClick={toggleCart}
-        className="text-sm font-semibold text-gray-800 hover:text-gray-900"
+        className="text-sm font-semibold text-gray-800 dark:text-white hover:text-gray-900"
       >
-        Services1
+        Services
       </button>
     </li>
 
     
 {/* ==========Font */}
-    <li>
-    <button
-
-//onClick={changeFont("merri")}
-onClick={()=>{changeFont(merri)}}
-
-className="text-sm font-semibold text-gray-800 hover:text-gray-900"
->
-merri
-</button>
-    
-    </li>
+   
 
 
-    <li>
-    <button
-
-
-onClick={()=>{changeFont(varel)}}
-className="text-sm font-semibold text-gray-800 hover:text-gray-900"
->
-varel
-</button>
-    
-    </li>
-
-
-
-
-
-    <li>
-    <button
-
-
-onClick={()=>{changeFont(roboto)}}
-className="text-sm font-semibold text-gray-800 hover:text-gray-900"
->
-roboto
-</button>
-    
-    </li>
-
-
-
-    <li>
-    <button
-
-
-onClick={()=>{changeFont(robotoslab)}}
-className="text-sm font-semibold text-gray-800 hover:text-gray-900"
->
-robotoslab
-</button>
-    
-    </li>
-
-
-    <li>
-    <button
-
-
-onClick={()=>{changeFont(noto)}}
-className="text-sm font-semibold text-gray-800 hover:text-gray-900"
->
-noto
-</button>
-    
-    </li>
-
-
-
-
-    {/* <li>
-    <button
-
-
-onClick={()=>{changeFont(inter)}}
-className="text-sm font-semibold text-gray-800 hover:text-gray-900"
->
-inter
-</button>
-    
-    </li> */}
+  
 
     
   </ul>
@@ -241,11 +158,11 @@ inter
           <div className="hidden lg:block">
             <button
               type="button"
-              onClick={toggleCart}
+              onClick={handleTheam}
 
               className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             >
-              Services2
+              {theam && (theam==="dark")? "Light" :"Dark"} 
             </button>
 
           </div>

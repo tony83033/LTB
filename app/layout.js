@@ -1,37 +1,17 @@
 "use client"
 import './globals.css';
-import { Inter , Roboto ,Varela_Round, Merriweather , Noto_Sans, Roboto_Slab} from 'next/font/google';
+import { Varela_Round} from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Appstate from '@/context/Appstate';
 import Head from 'next/head';
 import { useState} from 'react';
 
-
-
-const inter = Inter({ subsets: ['latin'] })
-
-const roboto = Roboto( {subsets: ['latin'] ,
-weight: '400',
-});
-
-const noto = Noto_Sans({subsets:['latin'],
-  weight: '400'
-})
-
-const robotoslab = Roboto_Slab({subsets:['latin'],
-  weight: '300'
-})
-
-
 const varel = Varela_Round({subsets:['latin'],
   weight: '400'
 });
 
-  const merri = Merriweather({subsets:['latin'],
-  weight :'300'
-});
-
+ 
 
 
 <Head>
@@ -45,26 +25,20 @@ export default function RootLayout({ children }) {
   
 
 
-
+const [theam,setTheam] = useState("dark")
  
-  
-  const [font , setFont] = useState(inter);
-    const changeFont = async (fontName)=>{
-        console.log("before font is ",font)
-        setFont(fontName);
-        console.log("after font  is",font, " ",fontName);
-      }
 
 
   return (
     <Appstate>
       
-    <html lang="en">
+    <html lang="en"  className={theam}>
        
         
-      <body className={font.className}>
+      <body className={varel.className && "dark:bg-[#1E293B] bg-white"}>
+
      
-        <Navbar changeFont={changeFont}></Navbar>
+        <Navbar setTheam={setTheam} theam={theam}></Navbar>
         {children}
         <Footer></Footer>
         </body>

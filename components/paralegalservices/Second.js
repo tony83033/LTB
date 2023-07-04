@@ -13,8 +13,8 @@ const Second = () => {
       });
   return (
     <React.Fragment>
-	<div className='bg-white    sm:w-5/6 w-full md:w-5/6 lg:5/6 mx-auto'>
-    <section className="dark:bg-white dark:text-gray-100 bg-white">
+	<div className='bg-white dark:bg-[#1E293B]   sm:w-5/6 w-full md:w-5/6 lg:5/6 mx-auto'>
+    <section className=" dark:text-white bg-white dark:bg-[#1E293B]">
 	<div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
 		<div data-aos="fade-down">
 			<h2 className="text-lg font-semibold tracking-tight text-center sm:text-5xl dark:text-gray-50 ">Here are some common paralegal services which are typically outsourced to TLB

@@ -52,13 +52,13 @@ export default function Third() {
   
   return (
      <>
-    <div className="bg-transparent mx-auto w-5/6">
+    <div className="bg-transparent dark:bg-[#1E293B] mx-auto w-5/6">
 
       <div className="container mx-auto p-4 my-6 space-y-2 text-center  mt-4 bg-w mb-4">
-        <h2 className="text-3xl font-bold">
+        <h2 className="text-3xl font-bold dark:text-white">
           Why Outsource Paralegal Support Services to TLB?
         </h2>
-        <p className="dark:text-gray-400">
+        <p className=" dark:text-white">
           Outsourcing paralegal support offers several benefits to law firms and
           legal departments:
         </p>
@@ -87,7 +87,7 @@ export default function Third() {
         {/* Step 2: Map the card data to the SwiperSlides */}
         {cardData.map((card, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-white tiles rounded-b-xl shadow-gray-700 shadow-xl rounded-t-lg    p-8 ">
+            <div className="bg-white dark:bg-[#1E293B] tiles rounded-b-xl shadow-gray-700 shadow-xl rounded-t-lg    p-8 ">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
                   <svg
@@ -103,9 +103,9 @@ export default function Third() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold ml-4">{card.title}</h3>
+                <h3 className="text-xl font-bold ml-4 dark:text-white">{card.title}</h3>
               </div>
-              <p className="text-gray-700">{card.description}</p>
+              <p className="text-gray-700 dark:text-white">{card.description}</p>
             </div>
           </SwiperSlide>
         ))}
