@@ -216,12 +216,12 @@ const Navbar = ({setTheam,theam}) => {
                         </a>
                       ))}
                        
-                       {/* <button
+                       <button
                     onClick={toggleCart}
                     className="text-sm font-bold text-gray-800  hover:text-gray-900"
                   >
                     Services
-                  </button> */}
+                  </button>
                 
                       
                     </nav>
