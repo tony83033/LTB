@@ -139,7 +139,7 @@ const Second = () => {
 												<h4 className="text-lg font-medium leading-6">Demand Letter Preparation:
 												</h4>
 												<p className="mt-2 dark:text-gray-400">
-													TLB can assist in preparing demand letters, which outline the client's claim for compensation
+													TLB can assist in preparing demand letters, which outline the client&apos;s claim for compensation
 													and damages. They can help gather necessary information, draft the letter, and ensure its
 													completeness and accuracy
 												</p>
