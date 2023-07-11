@@ -216,12 +216,12 @@ const Navbar = ({setTheam,theam}) => {
                         </a>
                       ))}
                        
-                       {/* <button
+                       <button
                     onClick={toggleCart}
                     className="text-sm font-bold text-gray-800  hover:text-gray-900"
                   >
                     Services
-                  </button> */}
+                  </button>
                 
                       
                     </nav>
@@ -276,7 +276,7 @@ const Navbar = ({setTheam,theam}) => {
               </div>
               <Link
                 className="flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-                href="/cakeintakeservices"
+                href="/caseintakeservices"
               >
                <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -296,7 +296,7 @@ const Navbar = ({setTheam,theam}) => {
               </Link>
               <Link
                 className="flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-                href="/contractmanagement"
+                href="/globalimigration"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -312,7 +312,7 @@ const Navbar = ({setTheam,theam}) => {
                     d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12"
                   />
                 </svg>
-                <span className="mx-2 text-sm font-medium">Contract Management</span>
+                <span className="mx-2 text-sm font-medium">Global Imigration</span>
               </Link>
               <Link
                 className="flex items-center px-3 py-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
